@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE Map[]>
+<Map srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over" background-color="#263238">
+
+<Parameters>
+  <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
+  <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
+  <Parameter name="center">6.9669,50.9176,16</Parameter>
+  <Parameter name="description"><![CDATA[Slate colored Style based on Mapzen]]></Parameter>
+  <Parameter name="format">png8:m=h</Parameter>
+  <Parameter name="maxzoom">22</Parameter>
+  <Parameter name="minzoom">0</Parameter>
+  <Parameter name="name"><![CDATA[Mapzen Slate]]></Parameter>
+  <Parameter name="source"><![CDATA[http://vector.mapzen.com/osm/tilejson/mapbox.json]]></Parameter>
+</Parameters>
+
+
+<Style name="water" filter-mode="first">
+  <Rule>
+    <MaxScaleDenominator>2500</MaxScaleDenominator>
+    <Filter>([kind] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="3" stroke="#37474f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <MinScaleDenominator>2500</MinScaleDenominator>
+    <Filter>([kind] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#37474f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>750000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([kind] = 'stream')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#37474f" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>750000</MinScaleDenominator>
+    <Filter>([kind] = 'stream')</Filter>
+    <LineSymbolizer stroke="#37474f" stroke-width="0.5" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([kind] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="18" stroke="#37474f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([kind] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#37474f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([kind] = 'canal')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#37474f" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([kind] = 'canal')</Filter>
+    <LineSymbolizer stroke="#37474f" stroke-width="1" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>12500</MaxScaleDenominator>
+    <Filter>([kind] = 'river')</Filter>
+    <LineSymbolizer stroke-width="18" stroke="#37474f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>50000</MaxScaleDenominator>
+    <MinScaleDenominator>12500</MinScaleDenominator>
+    <Filter>([kind] = 'river')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#37474f" />
+  </Rule>
+  <Rule>
+    <MaxScaleDenominator>200000</MaxScaleDenominator>
+    <MinScaleDenominator>50000</MinScaleDenominator>
+    <Filter>([kind] = 'river')</Filter>
+    <LineSymbolizer stroke-width="2" stroke="#37474f" />
+  </Rule>
+  <Rule>
+    <MinScaleDenominator>200000</MinScaleDenominator>
+    <Filter>([kind] = 'river')</Filter>
+    <LineSymbolizer stroke="#37474f" stroke-width="1" />
+  </Rule>
+  <Rule>
+    <Filter>([kind] = 'reservoir')</Filter>
+    <PolygonSymbolizer fill="#37474f" />
+  </Rule>
+  <Rule>
+    <Filter>([kind] = 'ocean')</Filter>
+    <PolygonSymbolizer fill="#37474f" />
+  </Rule>
+  <Rule>
+    <Filter>([kind] = 'riverbank')</Filter>
+    <PolygonSymbolizer fill="#37474f" />
+  </Rule>
+  <Rule>
+    <Filter>([kind] = 'water')</Filter>
+    <PolygonSymbolizer fill="#37474f" />
+  </Rule>
+</Style>
+<Layer name="water"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>water</StyleName>  </Layer>
+
+<Layer name="earth"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="landuse"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Style name="roads" filter-mode="first">
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([kind] = 'rail') and ([higway] = 'driveway')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([kind] = 'rail') and ([highway] = 'service')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([kind] = 'rail') and ([highway] = 'footway')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([kind] = 'rail') and ([highway] = 'footpath')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([kind] = 'rail')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([higway] = 'driveway')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([highway] = 'service')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([highway] = 'footway')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([highway] = 'footpath')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([highway] = 'secondary')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([highway] = 'primary')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes') and ([highway] = 'residential')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+  </Rule>
+  <Rule>
+    <Filter>([is_tunnel] = 'yes')</Filter>
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+  </Rule>
+  <Rule>
+    <Filter>([kind] = 'rail') and ([higway] = 'driveway')</Filter>
+    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([kind] = 'rail') and ([highway] = 'service')</Filter>
+    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([kind] = 'rail') and ([highway] = 'footway')</Filter>
+    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([kind] = 'rail') and ([highway] = 'footpath')</Filter>
+    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([kind] = 'rail')</Filter>
+    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+  </Rule>
+  <Rule>
+    <Filter>([higway] = 'driveway')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'service')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'footway')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'footpath')</Filter>
+    <LineSymbolizer stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'secondary')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'primary')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+  </Rule>
+  <Rule>
+    <Filter>([highway] = 'residential')</Filter>
+    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+  </Rule>
+  <Rule>
+    <LineSymbolizer stroke-width="1" stroke="#ffffff" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+  </Rule>
+</Style>
+<Layer name="roads"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+    <StyleName>roads</StyleName>  </Layer>
+
+<Layer name="buildings"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="pois"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+<Layer name="places"
+  srs="+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0.0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs +over">
+      </Layer>
+
+</Map>
