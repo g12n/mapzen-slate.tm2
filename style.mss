@@ -2,14 +2,15 @@
 
 // Common Colors //
 @land: #263238;
-@street: #fff ;
 @rail: #607D8B ;
 @water:#37474F;
-
+@street: #fff ;
+@street-minor: mix(@street,@land,50%);
+  
 Map { background-color: @land; }
 #roads{
   line-width: 1;
-  line-color: @street;
+  line-color:@street;
   line-cap: round;
   line-join: round;
   line-gamma: 1;
@@ -17,12 +18,14 @@ Map { background-color: @land; }
   [highway="primary"], 
   [highway="residential"] {
    line-width: 1;
+    line-color:@street-minor;
   }
   [highway ="footpath"],
   [highway ="footway"],
   [highway="service"],
   [higway="driveway"]{
     line-width: 0.5;
+    line-color:@street-minor;
     line-gamma: 1;
       line-smooth: 0.4;
    }
