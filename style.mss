@@ -2,12 +2,13 @@
 
 // Common Colors //
 @land: #263238;
-@rail: #607D8B ;
+@rail: #607D8B;
 @water:#37474F;
-@street: #fff ;
+@street: #fff;
 @street-minor: mix(@street,@land,50%);
   
 Map { background-color: @land; }
+
 #roads{
   line-width: 1;
   line-color:@street;
@@ -25,18 +26,18 @@ Map { background-color: @land; }
   [highway="service"],
   [higway="driveway"]{
     line-width: 0.5;
-    line-color:@street-minor;
+    line-color:@street;
     line-gamma: 1;
       line-smooth: 0.4;
    }
   [kind ="rail"]{
     line-color: @rail;
     line-width: 0.5;
-   // line-dasharray: 3,2;
+   line-dasharray: 3,2;
   }
   [is_tunnel="yes"]{
     line-dasharray: 3,2;
-    line-color: #455A6;
+    line-color: @street-minor;
   }
 }
 

@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">-74.0053,40.7401,13</Parameter>
+  <Parameter name="center">-74.0115,40.7488,11</Parameter>
   <Parameter name="description"><![CDATA[Slate colored Style based on Mapzen]]></Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
@@ -114,91 +114,91 @@
 <Style name="roads" filter-mode="first">
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([kind] = 'rail') and ([higway] = 'driveway')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([kind] = 'rail') and ([highway] = 'service')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([kind] = 'rail') and ([highway] = 'footway')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([kind] = 'rail') and ([highway] = 'footpath')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([kind] = 'rail')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([higway] = 'driveway')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([highway] = 'service')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([highway] = 'footway')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([highway] = 'footpath')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([highway] = 'secondary')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([highway] = 'primary')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes') and ([highway] = 'residential')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
   </Rule>
   <Rule>
     <Filter>([is_tunnel] = 'yes')</Filter>
-    <LineSymbolizer stroke-dasharray="3, 2" stroke="#445555 A6" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+    <LineSymbolizer stroke-dasharray="3, 2" stroke="#93999c" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
   </Rule>
   <Rule>
     <Filter>([kind] = 'rail') and ([higway] = 'driveway')</Filter>
-    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-dasharray="3, 2" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([kind] = 'rail') and ([highway] = 'service')</Filter>
-    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-dasharray="3, 2" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([kind] = 'rail') and ([highway] = 'footway')</Filter>
-    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-dasharray="3, 2" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([kind] = 'rail') and ([highway] = 'footpath')</Filter>
-    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-dasharray="3, 2" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([kind] = 'rail')</Filter>
-    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
+    <LineSymbolizer stroke="#607d8b" stroke-width="0.5" stroke-dasharray="3, 2" stroke-linecap="round" stroke-linejoin="round" stroke-gamma="1" />
   </Rule>
   <Rule>
     <Filter>([higway] = 'driveway')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#93999c" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.5" stroke="#ffffff" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([highway] = 'service')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#93999c" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.5" stroke="#ffffff" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([highway] = 'footway')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#93999c" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.5" stroke="#ffffff" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([highway] = 'footpath')</Filter>
-    <LineSymbolizer stroke-width="0.5" stroke="#93999c" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
+    <LineSymbolizer stroke-width="0.5" stroke="#ffffff" stroke-gamma="1" smooth="0.4" stroke-linecap="round" stroke-linejoin="round" />
   </Rule>
   <Rule>
     <Filter>([highway] = 'secondary')</Filter>

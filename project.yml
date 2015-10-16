@@ -10,9 +10,9 @@ bounds:
   - 180
   - 85.0511
 center: 
-  - -74.0053
-  - 40.7401
-  - 13
+  - -74.0115
+  - 40.7488
+  - 11
 description: Slate colored Style based on Mapzen
 format: "png8:m=h"
 interactivity_layer: ''
