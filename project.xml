@@ -5,7 +5,7 @@
 <Parameters>
   <Parameter name="attribution"><![CDATA[<a href='https://www.mapbox.com/about/maps/' target='_blank'>&copy; Mapbox &copy; OpenStreetMap</a> <a class='mapbox-improve-map' href='https://www.mapbox.com/map-feedback/' target='_blank'>Improve this map</a>]]></Parameter>
   <Parameter name="bounds">-180,-85.0511,180,85.0511</Parameter>
-  <Parameter name="center">6.9669,50.9176,16</Parameter>
+  <Parameter name="center">-73.9991,40.7197,11</Parameter>
   <Parameter name="description"><![CDATA[Slate colored Style based on Mapzen]]></Parameter>
   <Parameter name="format">png8:m=h</Parameter>
   <Parameter name="maxzoom">22</Parameter>
@@ -83,19 +83,19 @@
     <LineSymbolizer stroke="#37474f" stroke-width="1" />
   </Rule>
   <Rule>
-    <Filter>([kind] = 'reservoir')</Filter>
+    <Filter>([kind] = 'riverbank') and ([area] &gt; 0)</Filter>
     <PolygonSymbolizer fill="#37474f" />
   </Rule>
   <Rule>
-    <Filter>([kind] = 'ocean')</Filter>
+    <Filter>([kind] = 'ocean') and ([area] &gt; 0)</Filter>
     <PolygonSymbolizer fill="#37474f" />
   </Rule>
   <Rule>
-    <Filter>([kind] = 'riverbank')</Filter>
+    <Filter>([kind] = 'water') and ([area] &gt; 0)</Filter>
     <PolygonSymbolizer fill="#37474f" />
   </Rule>
   <Rule>
-    <Filter>([kind] = 'water')</Filter>
+    <Filter>([kind] = 'reservoir') and ([area] &gt; 0)</Filter>
     <PolygonSymbolizer fill="#37474f" />
   </Rule>
 </Style>

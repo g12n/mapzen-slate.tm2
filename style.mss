@@ -42,7 +42,9 @@ Map { background-color: @land; }
  [kind='riverbank'], 
  [kind='water'],
  [kind='reservoir'] {
-  polygon-fill: @water;
+    [area>0]{
+      polygon-fill: @water;
+    }
   }
 }
 
